@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-4 login">
+      <button (click)="showLogin = true">Iniciar Sesión</button>
+      <button (click)="showLogin = false">Regístrate</button>
+      <app-login *ngIf="showLogin"></app-login>
+      <app-cliente *ngIf="!showLogin"></app-cliente>
+    </div>
+  </div>
+</div>
